@@ -63,6 +63,7 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  padding-bottom: 18px;
 }
 
 .activity-card h4 {
@@ -141,4 +142,61 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Participants section */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.participants-header {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #1a237e;
+}
+
+/* Participants list: remove bullets and style items with a delete button */
+.participants-list {
+  list-style: none;
+  margin-top: 8px;
+  padding-left: 0;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eef7ff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  color: #034a74;
+}
+
+.participant-name {
+  word-break: break-word;
+  margin-right: 10px;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
+/* Subtle placeholder when there are no participants */
+.no-participants {
+  color: #666;
+  font-style: italic;
+  margin-top: 8px;
 }
